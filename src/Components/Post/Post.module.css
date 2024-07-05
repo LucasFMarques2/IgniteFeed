@@ -1,0 +1,124 @@
+.post{
+    background: var(--gray-800);
+    border-radius: 9px;
+    padding: 2rem;
+    
+}
+
+.post + .post{
+    margin-top: 3rem;
+}
+
+.post > header{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.post > header time{
+    font-size: 1.6rem;
+    color: var(--gray-400);
+}
+
+.author{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.authorInfo  strong{
+    font-size: 2rem;
+    color: var(--gray-100)
+}
+
+.authorInfo > span{
+    color: var(--gray-400);
+    font-size: 1.6rem;
+}
+
+.authorInfo{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.content {
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.content p{
+    margin-top: 3rem;
+}
+
+.content a{
+    font-weight: bold;
+    color: var(--green-500);
+    text-decoration: none;
+}
+
+.content a:hover{
+    color: var(--green-300);
+}
+
+.commentForm{
+    width: 90%;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    margin-left: 2rem;
+    border-top: 1px solid var(--gray-600);
+}
+
+.commentForm strong{
+    line-height: 1.6;
+    color: var(--gray-100);
+}
+
+.commentForm textarea{
+    width: 100%;
+    background: var(--gray-900);
+    border: 0;
+    resize: none;
+    height: 8rem;
+    padding: 1.6rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    color: var(--gray-100);
+    line-height: 1.4;
+}
+
+.commentForm footer{
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentForm:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.commentForm button[type=submit]{
+    padding: 1.6rem 2rem;
+    margin-top: 1.6rem;
+    border: none;
+    background-color: var(--green-500);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.commentForm button[type=submit]:hover{
+    background-color: var(--green-300);
+    transition: .3s;
+}
+
+.commentList {
+    margin-top: 3.2rem;
+    margin-left: 2rem;
+}
